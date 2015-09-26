@@ -1,3 +1,4 @@
+
 // Create new scene named Main
 game.createScene('Main', {
 
@@ -6,14 +7,17 @@ var ctx = canvas.getContext("2d");
 canvas.width = 900;
 canvas.height = 500;
 document.body.appendChild(canvas);
-    
+
+	keydown: function(key){
+		if (key === "UP") {
+			body.position.y
+		}
+	}
+
     // Create physics world
 this.world = new game.World();
 
 
-init function {
-
-createClass(player, Body);
 // Create new body
 var body = new game.Body();
 
@@ -28,6 +32,5 @@ body.addAsset(shark);
 
 // Add body to world
 this.world.addBody(body);
-}
 
 }
