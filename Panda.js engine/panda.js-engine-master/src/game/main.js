@@ -14,3 +14,16 @@ game.createScene('Main', {
 });
 
 });
+
+//generate the trash
+//Input: nothing
+//Output: generates 1 piece of trash at the edge of the screen
+function generateTrash(){
+  var trash = new game.Body({
+              position: [generateRandom()],
+              collisionGroup: 0,
+              collideAgainst: 0,
+              mass: 0,
+          });
+
+}
